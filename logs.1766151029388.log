@@ -1,0 +1,246 @@
+2025-12-19T13:28:24.000000000Z [inf]  Starting Container
+2025-12-19T13:28:25.824816380Z [inf]  Starting Web API server...
+2025-12-19T13:28:25.824827290Z [inf]  Listening on 0.0.0.0:8080
+2025-12-19T13:28:25.824836753Z [inf]  --------------------------------------------------
+2025-12-19T13:28:25.824847708Z [err]  INFO:     Started server process [1]
+2025-12-19T13:28:25.824855981Z [err]  INFO:     Waiting for application startup.
+2025-12-19T13:28:25.824863785Z [inf]  📤 Upload processor started
+2025-12-19T13:28:25.824871595Z [inf]  ✅ Using session from TELEGRAM_SESSION env variable
+2025-12-19T13:28:25.824880075Z [err]  INFO:     Application startup complete.
+2025-12-19T13:28:25.824888123Z [err]  INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2025-12-19T13:28:25.967943018Z [inf]  ✅ Telegram client authorized successfully
+2025-12-19T13:28:30.730708178Z [inf]  INFO:     100.64.0.2:44638 - "GET / HTTP/1.1" 200 OK
+2025-12-19T13:28:30.965197068Z [inf]  INFO:     100.64.0.2:44638 - "GET /assets/index-DBWpcqN7.js HTTP/1.1" 200 OK
+2025-12-19T13:28:30.965203657Z [inf]  INFO:     100.64.0.2:44652 - "GET /assets/index-CtAdTVLv.css HTTP/1.1" 200 OK
+2025-12-19T13:28:31.560051670Z [inf]  INFO:     100.64.0.2:44638 - "GET /vite.svg HTTP/1.1" 404 Not Found
+2025-12-19T13:28:31.560060235Z [inf]  INFO:     100.64.0.2:44652 - "GET /assets/Login-dqizK-wz.js HTTP/1.1" 200 OK
+2025-12-19T13:29:11.583369146Z [err]      await super().__call__(scope, receive, send)
+2025-12-19T13:29:11.583463787Z [err]  (trapped) error reading bcrypt version
+2025-12-19T13:29:11.583471096Z [err]  Traceback (most recent call last):
+2025-12-19T13:29:11.583476806Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+2025-12-19T13:29:11.583482671Z [err]      version = _bcrypt.__about__.__version__
+2025-12-19T13:29:11.583489251Z [err]                ^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.583494734Z [err]  AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-12-19T13:29:11.583500925Z [inf]  INFO:     100.64.0.2:29270 - "POST /api/auth/login HTTP/1.1" 500 Internal Server Error
+2025-12-19T13:29:11.583507732Z [err]  ERROR:    Exception in ASGI application
+2025-12-19T13:29:11.583513017Z [err]  Traceback (most recent call last):
+2025-12-19T13:29:11.583519151Z [err]    File "/app/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2025-12-19T13:29:11.583524704Z [err]      result = await app(  # type: ignore[func-returns-value]
+2025-12-19T13:29:11.583530346Z [err]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.583537163Z [err]          self.scope, self.receive, self.send
+2025-12-19T13:29:11.583544195Z [err]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.583551654Z [err]      )
+2025-12-19T13:29:11.583558201Z [err]      ^
+2025-12-19T13:29:11.583564387Z [err]    File "/app/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2025-12-19T13:29:11.583570574Z [err]      return await self.app(scope, receive, send)
+2025-12-19T13:29:11.583576152Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.583582627Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1135, in __call__
+2025-12-19T13:29:11.584496223Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+2025-12-19T13:29:11.584506262Z [err]      await self.middleware_stack(scope, receive, send)
+2025-12-19T13:29:11.584512802Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2025-12-19T13:29:11.584519342Z [err]      raise exc
+2025-12-19T13:29:11.584525854Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2025-12-19T13:29:11.584532963Z [err]      await self.app(scope, receive, _send)
+2025-12-19T13:29:11.584540698Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 93, in __call__
+2025-12-19T13:29:11.584547155Z [err]      await self.simple_response(scope, receive, send, request_headers=headers)
+2025-12-19T13:29:11.584553196Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+2025-12-19T13:29:11.584558807Z [err]      await self.app(scope, receive, send)
+2025-12-19T13:29:11.584563761Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+2025-12-19T13:29:11.584570788Z [err]      await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2025-12-19T13:29:11.584576816Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2025-12-19T13:29:11.584582946Z [err]      raise exc
+2025-12-19T13:29:11.584587468Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2025-12-19T13:29:11.584593386Z [err]      await app(scope, receive, sender)
+2025-12-19T13:29:11.584598657Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+2025-12-19T13:29:11.584603836Z [err]      await self.app(scope, receive, send)
+2025-12-19T13:29:11.585467269Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+2025-12-19T13:29:11.585477575Z [err]      await self.middleware_stack(scope, receive, send)
+2025-12-19T13:29:11.585485415Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+2025-12-19T13:29:11.585493205Z [err]      await route.handle(scope, receive, send)
+2025-12-19T13:29:11.585500976Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+2025-12-19T13:29:11.585507955Z [err]      await self.app(scope, receive, send)
+2025-12-19T13:29:11.585513195Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 118, in app
+2025-12-19T13:29:11.585517851Z [err]      await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2025-12-19T13:29:11.585523351Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2025-12-19T13:29:11.585528668Z [err]      raise exc
+2025-12-19T13:29:11.585532781Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2025-12-19T13:29:11.585537414Z [err]      await app(scope, receive, sender)
+2025-12-19T13:29:11.585541871Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 104, in app
+2025-12-19T13:29:11.585546665Z [err]      response = await f(request)
+2025-12-19T13:29:11.585551060Z [err]                 ^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.585555601Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 428, in app
+2025-12-19T13:29:11.585560638Z [err]      raw_response = await run_endpoint_function(
+2025-12-19T13:29:11.585565577Z [err]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.585569992Z [err]      ...<3 lines>...
+2025-12-19T13:29:11.585574748Z [err]      )
+2025-12-19T13:29:11.586585968Z [err]      ^
+2025-12-19T13:29:11.586598124Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 314, in run_endpoint_function
+2025-12-19T13:29:11.586604503Z [err]      return await dependant.call(**values)
+2025-12-19T13:29:11.586610821Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.586616432Z [err]    File "/app/api.py", line 209, in login
+2025-12-19T13:29:11.586623007Z [err]      if not authenticate_user(user.username, user.password):
+2025-12-19T13:29:11.586628466Z [err]             ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.586633974Z [err]    File "/app/auth.py", line 59, in authenticate_user
+2025-12-19T13:29:11.586639726Z [err]      init_default_password()
+2025-12-19T13:29:11.586645293Z [err]      ~~~~~~~~~~~~~~~~~~~~~^^
+2025-12-19T13:29:11.586654205Z [err]    File "/app/auth.py", line 54, in init_default_password
+2025-12-19T13:29:11.586659702Z [err]      _hashed_default_password = get_password_hash(DEFAULT_PASSWORD)
+2025-12-19T13:29:11.586665334Z [err]    File "/app/auth.py", line 43, in get_password_hash
+2025-12-19T13:29:11.586670978Z [err]      return pwd_context.hash(truncate_password(password))
+2025-12-19T13:29:11.586676702Z [err]             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.586681742Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/context.py", line 2258, in hash
+2025-12-19T13:29:11.586687761Z [err]      return record.hash(secret, **kwds)
+2025-12-19T13:29:11.586692647Z [err]             ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.586698922Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 779, in hash
+2025-12-19T13:29:11.586703358Z [err]      self.checksum = self._calc_checksum(secret)
+2025-12-19T13:29:11.586708638Z [err]                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+2025-12-19T13:29:11.586713127Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 591, in _calc_checksum
+2025-12-19T13:29:11.587960034Z [err]      self._stub_requires_backend()
+2025-12-19T13:29:11.587970352Z [err]      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2025-12-19T13:29:11.587976819Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2254, in _stub_requires_backend
+2025-12-19T13:29:11.587983462Z [err]      cls.set_backend()
+2025-12-19T13:29:11.587989445Z [err]      ~~~~~~~~~~~~~~~^^
+2025-12-19T13:29:11.587995719Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2156, in set_backend
+2025-12-19T13:29:11.588001782Z [err]      return owner.set_backend(name, dryrun=dryrun)
+2025-12-19T13:29:11.588007962Z [err]             ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.588013844Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2163, in set_backend
+2025-12-19T13:29:11.588019294Z [err]      return cls.set_backend(name, dryrun=dryrun)
+2025-12-19T13:29:11.588024504Z [err]             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.588029922Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2188, in set_backend
+2025-12-19T13:29:11.588036134Z [err]      cls._set_backend(name, dryrun)
+2025-12-19T13:29:11.588042188Z [err]      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2025-12-19T13:29:11.588048482Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2311, in _set_backend
+2025-12-19T13:29:11.588054082Z [err]      super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+2025-12-19T13:29:11.588059543Z [err]      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2025-12-19T13:29:11.588065986Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2224, in _set_backend
+2025-12-19T13:29:11.588071299Z [err]      ok = loader(**kwds)
+2025-12-19T13:29:11.588077508Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 626, in _load_backend_mixin
+2025-12-19T13:29:11.589172331Z [err]      return mixin_cls._finalize_backend_mixin(name, dryrun)
+2025-12-19T13:29:11.589182436Z [err]             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2025-12-19T13:29:11.589190031Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 421, in _finalize_backend_mixin
+2025-12-19T13:29:11.589196161Z [err]      if detect_wrap_bug(IDENT_2A):
+2025-12-19T13:29:11.589202984Z [err]         ~~~~~~~~~~~~~~~^^^^^^^^^^
+2025-12-19T13:29:11.589209188Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 380, in detect_wrap_bug
+2025-12-19T13:29:11.589217645Z [err]      if verify(secret, bug_hash):
+2025-12-19T13:29:11.589224325Z [err]         ~~~~~~^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:11.589231561Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 792, in verify
+2025-12-19T13:29:11.589237654Z [err]      return consteq(self._calc_checksum(secret), chk)
+2025-12-19T13:29:11.589243310Z [err]                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+2025-12-19T13:29:11.589248391Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 655, in _calc_checksum
+2025-12-19T13:29:11.589253751Z [err]      hash = _bcrypt.hashpw(secret, config)
+2025-12-19T13:29:11.589258764Z [err]  ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-12-19T13:29:31.589944696Z [err]      ^
+2025-12-19T13:29:31.589954859Z [err]  (trapped) error reading bcrypt version
+2025-12-19T13:29:31.589955625Z [err]    File "/app/.venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2025-12-19T13:29:31.589964454Z [err]      return await self.app(scope, receive, send)
+2025-12-19T13:29:31.589965457Z [err]  Traceback (most recent call last):
+2025-12-19T13:29:31.589971490Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+2025-12-19T13:29:31.589976720Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.589980068Z [err]      version = _bcrypt.__about__.__version__
+2025-12-19T13:29:31.589985206Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/applications.py", line 1135, in __call__
+2025-12-19T13:29:31.589987686Z [err]                ^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.589992668Z [err]      await super().__call__(scope, receive, send)
+2025-12-19T13:29:31.589995429Z [err]  AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-12-19T13:29:31.590000280Z [inf]  INFO:     100.64.0.2:48004 - "POST /api/auth/login HTTP/1.1" 500 Internal Server Error
+2025-12-19T13:29:31.590005315Z [err]  ERROR:    Exception in ASGI application
+2025-12-19T13:29:31.590009974Z [err]  Traceback (most recent call last):
+2025-12-19T13:29:31.590014794Z [err]    File "/app/.venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+2025-12-19T13:29:31.590025694Z [err]      result = await app(  # type: ignore[func-returns-value]
+2025-12-19T13:29:31.590030223Z [err]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.590034849Z [err]          self.scope, self.receive, self.send
+2025-12-19T13:29:31.590040193Z [err]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.590044871Z [err]      )
+2025-12-19T13:29:31.591388513Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/applications.py", line 107, in __call__
+2025-12-19T13:29:31.591388713Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2025-12-19T13:29:31.591399316Z [err]      await self.app(scope, receive, send)
+2025-12-19T13:29:31.591401845Z [err]      raise exc
+2025-12-19T13:29:31.591401975Z [err]      await self.middleware_stack(scope, receive, send)
+2025-12-19T13:29:31.591410003Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2025-12-19T13:29:31.591410827Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2025-12-19T13:29:31.591419310Z [err]      raise exc
+2025-12-19T13:29:31.591430858Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2025-12-19T13:29:31.591437613Z [err]      await app(scope, receive, sender)
+2025-12-19T13:29:31.591442358Z [err]      await self.app(scope, receive, _send)
+2025-12-19T13:29:31.591452322Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 93, in __call__
+2025-12-19T13:29:31.591455250Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+2025-12-19T13:29:31.591461600Z [err]      await self.simple_response(scope, receive, send, request_headers=headers)
+2025-12-19T13:29:31.591469650Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+2025-12-19T13:29:31.591478133Z [err]      await self.app(scope, receive, send)
+2025-12-19T13:29:31.591484154Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+2025-12-19T13:29:31.591489358Z [err]      await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2025-12-19T13:29:31.592596591Z [err]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.592597316Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+2025-12-19T13:29:31.592601451Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 118, in app
+2025-12-19T13:29:31.592605544Z [err]      ...<3 lines>...
+2025-12-19T13:29:31.592612150Z [err]      await self.middleware_stack(scope, receive, send)
+2025-12-19T13:29:31.592614627Z [err]      )
+2025-12-19T13:29:31.592616310Z [err]      await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2025-12-19T13:29:31.592620407Z [err]                 ^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.592623428Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+2025-12-19T13:29:31.592628608Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2025-12-19T13:29:31.592629227Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2025-12-19T13:29:31.592634835Z [err]      await route.handle(scope, receive, send)
+2025-12-19T13:29:31.592634840Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 428, in app
+2025-12-19T13:29:31.592640843Z [err]      await app(scope, receive, sender)
+2025-12-19T13:29:31.592641187Z [err]      raise exc
+2025-12-19T13:29:31.592646202Z [err]    File "/app/.venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+2025-12-19T13:29:31.592652496Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 104, in app
+2025-12-19T13:29:31.592654920Z [err]      raw_response = await run_endpoint_function(
+2025-12-19T13:29:31.592660483Z [err]      await self.app(scope, receive, send)
+2025-12-19T13:29:31.592669952Z [err]      response = await f(request)
+2025-12-19T13:29:31.593865850Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 779, in hash
+2025-12-19T13:29:31.593870583Z [err]      ^
+2025-12-19T13:29:31.593875541Z [err]      self.checksum = self._calc_checksum(secret)
+2025-12-19T13:29:31.593882233Z [err]                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+2025-12-19T13:29:31.593888369Z [err]    File "/app/.venv/lib/python3.13/site-packages/fastapi/routing.py", line 314, in run_endpoint_function
+2025-12-19T13:29:31.593890087Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 591, in _calc_checksum
+2025-12-19T13:29:31.593897353Z [err]      return await dependant.call(**values)
+2025-12-19T13:29:31.593904459Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.593909940Z [err]    File "/app/api.py", line 209, in login
+2025-12-19T13:29:31.593914424Z [err]      if not authenticate_user(user.username, user.password):
+2025-12-19T13:29:31.593921802Z [err]             ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.593926305Z [err]    File "/app/auth.py", line 59, in authenticate_user
+2025-12-19T13:29:31.593932131Z [err]      init_default_password()
+2025-12-19T13:29:31.593936773Z [err]      ~~~~~~~~~~~~~~~~~~~~~^^
+2025-12-19T13:29:31.593941033Z [err]    File "/app/auth.py", line 54, in init_default_password
+2025-12-19T13:29:31.593945707Z [err]      _hashed_default_password = get_password_hash(DEFAULT_PASSWORD)
+2025-12-19T13:29:31.593952709Z [err]    File "/app/auth.py", line 43, in get_password_hash
+2025-12-19T13:29:31.593957114Z [err]      return pwd_context.hash(truncate_password(password))
+2025-12-19T13:29:31.593961519Z [err]             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.593965722Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/context.py", line 2258, in hash
+2025-12-19T13:29:31.593970309Z [err]      return record.hash(secret, **kwds)
+2025-12-19T13:29:31.593979186Z [err]             ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.595281316Z [err]      ok = loader(**kwds)
+2025-12-19T13:29:31.595288509Z [err]      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2025-12-19T13:29:31.595289427Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 626, in _load_backend_mixin
+2025-12-19T13:29:31.595301312Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2311, in _set_backend
+2025-12-19T13:29:31.595301649Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2163, in set_backend
+2025-12-19T13:29:31.595310413Z [err]      self._stub_requires_backend()
+2025-12-19T13:29:31.595310419Z [err]      super(SubclassBackendMixin, cls)._set_backend(name, dryrun)
+2025-12-19T13:29:31.595355549Z [err]      return cls.set_backend(name, dryrun=dryrun)
+2025-12-19T13:29:31.595360659Z [err]      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2025-12-19T13:29:31.595368026Z [err]             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.595368699Z [err]      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2025-12-19T13:29:31.595371196Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2224, in _set_backend
+2025-12-19T13:29:31.595376276Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2188, in set_backend
+2025-12-19T13:29:31.595381713Z [err]      cls._set_backend(name, dryrun)
+2025-12-19T13:29:31.595386441Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2254, in _stub_requires_backend
+2025-12-19T13:29:31.595394172Z [err]      cls.set_backend()
+2025-12-19T13:29:31.595401139Z [err]      ~~~~~~~~~~~~~~~^^
+2025-12-19T13:29:31.595408960Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 2156, in set_backend
+2025-12-19T13:29:31.595416571Z [err]      return owner.set_backend(name, dryrun=dryrun)
+2025-12-19T13:29:31.595424092Z [err]             ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.596390563Z [err]      return mixin_cls._finalize_backend_mixin(name, dryrun)
+2025-12-19T13:29:31.596398176Z [err]             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2025-12-19T13:29:31.596404496Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 421, in _finalize_backend_mixin
+2025-12-19T13:29:31.596409873Z [err]      if detect_wrap_bug(IDENT_2A):
+2025-12-19T13:29:31.596415479Z [err]         ~~~~~~~~~~~~~~~^^^^^^^^^^
+2025-12-19T13:29:31.596420519Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 380, in detect_wrap_bug
+2025-12-19T13:29:31.596425986Z [err]      if verify(secret, bug_hash):
+2025-12-19T13:29:31.596441306Z [err]         ~~~~~~^^^^^^^^^^^^^^^^^^
+2025-12-19T13:29:31.596446596Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/utils/handlers.py", line 792, in verify
+2025-12-19T13:29:31.596451478Z [err]      return consteq(self._calc_checksum(secret), chk)
+2025-12-19T13:29:31.596456098Z [err]                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+2025-12-19T13:29:31.596461319Z [err]    File "/app/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 655, in _calc_checksum
+2025-12-19T13:29:31.596468840Z [err]      hash = _bcrypt.hashpw(secret, config)
+2025-12-19T13:29:31.596475012Z [err]  ValueError: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
